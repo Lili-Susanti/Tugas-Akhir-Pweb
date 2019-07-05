@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<script language="javascript" src="js/javascript.js"></script>
+</head>
+<body background = "img/pekerjaan.jpg">
+<body>
+  <h2 style="font-size: 30px;  font-family: algerian; float: center; color: orange;" id="datime"></h2>
+
+<div class="menu2">
+	<br>
+	<hr width="90%">
+	<div class="menu2">
+	 <div class="container">		
+   <div align="center"><strong><font color="red"face="algerian" size="100">> Welcome To Web Programming <</font></strong></div><br>
+<form action="proses.php" method="post" enctype="multipart/form-data">
+  <table>
+  <div class="form-group">
+    <center>
+      <tr>
+        <td align="right" ><label for="nama" ><font color="grape" size="6">nama :</font></label></td>
+        <td><input type="text" name="nama" class="form-control" id="nama"></td>
+      </tr>
+  </div>
+
+  <div class="form-group">
+    <tr>
+      <td align="right"><label for="nim"><font color="grape" size="6">nim:</font></label></td>
+      <td><input type="text" name="nim" class="form-control" id="nim"></td>
+    </tr>
+  </div>
+  <div class="form-group">
+    <tr>
+      <td align="right"><label for="pasword"><font color="grape" size="6">pasword :</font></label></td>
+      <td><input type="text" name="pasword" class="form-control" id="pasword"></td></tr></div></center>
+    </tr>
+  </div>
+</td>
+</tr>
+</table>
+<br>
+ <button type="submit" name="Submit" class="btn btn-primary">Submit</button>
+    <button type="reset" name="Submit2" class="btn btn-danger">Reset</button>
+</form>
+<br>
+<br>
+<script>
+var sekarang = new Date();
+var hari = sekarang.getDay();
+var tanggal = sekarang.getDate();
+var bulan = sekarang.getMonth();
+var tahun = sekarang.getFullYear();
+var jam = sekarang.getHours();
+var menit = sekarang.getMinutes();
+var detik = sekarang.getSeconds(); document.getElementById('datime').innerHTML ="hari ini :"+hari+" tgl : "+tanggal+"/"+bulan+"/"+tahun+" JAM :"+jam+":"+menit+":"+detik;
+</script>
+</div>
+</body>
+</html>
